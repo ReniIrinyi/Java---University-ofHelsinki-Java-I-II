@@ -3,8 +3,10 @@ public class Greatest {
 
     public static int greatest(int number1, int number2, int number3) {
         //write some code here
-
-        return -1;
+        int currmax=0;
+        currmax = number1>number2? number1 : number2;
+        currmax = number3 > currmax ? number3 : currmax;
+        return currmax;
     }
 
     public static void main(String[] args) {

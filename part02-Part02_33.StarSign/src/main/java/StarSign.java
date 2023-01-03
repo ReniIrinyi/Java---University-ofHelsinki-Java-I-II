@@ -14,23 +14,38 @@ public class StarSign {
         System.out.println("\n---");
         printRectangle(5, 6);
         System.out.println("\n---");
+        printRectangle(17, 3);
+        System.out.println("\n---");
         printTriangle(3);
         System.out.println("\n---");
     }
 
     public static void printStars(int number) {
-        // first part of the exercise
+        for(int star=0; star<number; star++){
+            System.out.print("*");
+        };
+        System.out.println("");
     }
 
     public static void printSquare(int size) {
-        // second part of the exercise
+        for(int sz=1; sz<=size;sz++ ){
+            printStars(size);
+        };
     }
 
     public static void printRectangle(int width, int height) {
-        // third part of the exercise
+        for(int h=1; h<=height; h++){
+            
+            for(int w=1; w<=width;w++ ){
+                System.out.print("*");
+            };
+            System.out.println("");
+        };
     }
 
     public static void printTriangle(int size) {
-        // fourth part of the exercise
+        for(int w=1; w<=size; w++){
+            printStars(w);
+        }
     }
 }
