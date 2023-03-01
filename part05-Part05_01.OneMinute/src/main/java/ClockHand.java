@@ -21,7 +21,6 @@ public class ClockHand {
         return this.value;
     }
 
-    @Override
     public String toString() {
         if (this.value < 10) {
             return "0" + this.value;
